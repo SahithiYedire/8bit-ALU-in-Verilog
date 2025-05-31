@@ -25,6 +25,8 @@ This project is an implementation of an 8-bit Arithmetic Logic Unit (ALU) using 
 
 - *Vivado* – for writing, simulating, and verifying the design
 - *GitHub* – for version control and documentation
+## Simulation
+![image alt](https://github.com/SahithiYedire/8bit-ALU-in-Verilog/blob/7a14c60173b1533012d11081303eb180641eb7ad/ALU8.png)
 
 
 ## 🚀 How to Run
