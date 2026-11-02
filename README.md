@@ -1,41 +1,70 @@
-# 8bit-ALU-in-Verilog
-This project is an implementation of an 8-bit Arithmetic Logic Unit (ALU) using Verilog HDL. The design was simulated and tested using Xilinx Vivado.
+# YOUR BRAND NAME
 
-## 🛠️ Features
+A complete Pinterest-inspired gifting brand storefront built with React, Vite, and Tailwind CSS.
 
-- Performs basic arithmetic and logic operations:
-  - Addition
-  - Subtraction
-  - Multiplication
-  - AND
-  - OR
-  - NAND
-  - NOR
-  - XOR
-- Supports 8-bit inputs (A and B)
-- Outputs 8-bit result and flags (e.g., Zero, Carry)
+## Features
 
-## 📁 Files Included
+- Responsive storefront homepage with elegant pink boutique styling
+- Shop by category pages and product detail pages
+- Functional cart with quantity updates, subtotal, shipping, coupon support, and local persistence
+- Guest checkout and account/order history flow
+- Contact page and admin dashboard mock-up with role protection
+- Brand configuration file for easy updates
 
-- alu8.v – Verilog source code for ALU
-- alu8_tb.v – Testbench for simulation
-- README.md – Project documentation
+## Tech stack
 
-## 🧪 Tools Used
+- React + Vite
+- Tailwind CSS
+- React Router
+- Lucide React
+- LocalStorage for cart and demo state
 
-- *Vivado* – for writing, simulating, and verifying the design
-- *GitHub* – for version control and documentation
-## Simulation
-![image alt](https://github.com/SahithiYedire/8bit-ALU-in-Verilog/blob/7a14c60173b1533012d11081303eb180641eb7ad/ALU8.png)
+## Setup
 
+1. Install dependencies
+   ```bash
+   npm install
+   ```
+2. Start the development server
+   ```bash
+   npm run dev
+   ```
+3. Open the local URL shown in the terminal, typically http://localhost:5173
 
-## 🚀 How to Run
+## Brand configuration
 
-1. Open Vivado
-2. Create a new project and import alu8.v and alu8_tb.v
-3. Run behavioral simulation
-4. Observe the outputs for each operation
+Edit the file `src/config/siteConfig.js` to change:
 
-## 👩‍💻 Author
+- brandName
+- tagline
+- Instagram handle
+- WhatsApp number
+- email
+- address
+- shipping fee
+- free shipping threshold
 
-- Sahithi Yedire
+## Development / test payment notes
+
+This storefront is set up in development/test mode. It does not process live payments yet.
+
+To enable real Razorpay payments, you would need:
+
+- Razorpay API keys
+- secure backend order creation
+- signature verification on the server
+- live payment confirmation before marking an order as paid
+
+Never store secret keys in frontend code.
+
+## Project structure
+
+- `src/components` – shared storefront UI blocks
+- `src/pages` – individual pages
+- `src/context` – cart, wishlist, and auth state
+- `src/data` – sample products and category data
+- `src/config` – centralized branding config
+
+## Notes
+
+This storefront uses sample product data and placeholder brand details so you can replace them with your real final branding and product photography later.

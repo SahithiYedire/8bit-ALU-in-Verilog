@@ -9,6 +9,5 @@ export const siteConfig = {
   shippingFee: 149,
   freeShippingThreshold: 1499,
   currency: 'INR',
-  paymentMode: 'test',
-  discountCode: 'WELCOME10'
+  paymentMode: 'test'
 };

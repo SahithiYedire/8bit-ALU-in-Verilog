@@ -1,3 +1,5 @@
+import { siteConfig } from '../config/siteConfig';
+
 export const categories = [
   {
     id: 'books',
@@ -248,3 +250,11 @@ export const products = [
 ];
 
 export const featuredProducts = ['blind-date-book', 'strawberry-glass-can', 'aesthetic-notebook', 'book-lover-box'];
+
+export function formatPrice(value) {
+  return new Intl.NumberFormat('en-IN', {
+    style: 'currency',
+    currency: siteConfig.currency || 'INR',
+    maximumFractionDigits: 0
+  }).format(value);
+}
